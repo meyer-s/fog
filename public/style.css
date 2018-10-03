@@ -1,0 +1,78 @@
+
+html,body{
+	font-family:Roboto;
+	font-size:15px;
+	line-height:1.5;
+	overflow:hidden;
+	text-align:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-image: radial-gradient(#686868,#363636);
+    background-size: contain;
+	height:100%;
+	width:100%;
+}
+div {
+margin:auto;
+padding-top:15%;
+width:40%;
+align:center;
+height:100%;
+color:#E7E6E6;
+overflow:hidden;
+box-sizing:border-box;
+}
+a{text-decoration:none; line-height:1.5;font-size:36px;}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightblue;
+}
+
+/* selected link */
+a:active {
+    color: cyan;
+}
+
+input[type=submit] {
+	margin-top: 4px;
+    width: 80%;
+	font-weight:bold;
+    padding: 6px 7px;
+    box-sizing: border-box;
+	border-radius:4px;
+	color:#eee;
+	background-color: #8e8e8e;
+	border-style:none;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 6px 7px;
+    box-sizing: border-box;
+	border-radius:4px;
+}
+ul {
+	list-style-type:none;
+	font-size:24px;
+	box-sizing:border-box;
+	padding:0;
+}
+
+h1{font-size:36px;text-align:center;margin-top:35%;}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{font-weight:bold;margin:10px 0;text-shadow: 2px 2px 4px #333}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,{font-weight:inherit;font-family:inherit}
+hr{border:0;border-top:1px solid #eee;margin:20px 0;    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255,255, 255, 0), rgba(255, 255,255,255.75), rgba(255,255,255, 0)); width:80%; margin:auto;
+}
+img{margin-bottom:-5px}a{color:inherit}

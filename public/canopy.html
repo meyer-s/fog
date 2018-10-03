@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		var questionForm = $("#question").submit(submit);
+	});
+
+	function submit(event){
+		event.preventDefault();
+
+		var text = $("#response").val();
+		$.post('/', {text: text}, function(res){
+			$("#words").empty();
+			for(var i = 0; i < res.table.length; i++){
+				var li = $('<li></li>');
+	        	li.text(res.table[i]);
+	        	$("#words").append(li);
+			}
+	    });
+	}
+</script>
+</head>
+	<body>
+	<div>
+		<h1>Fog X FLO: Canopy</h1><hr>
+		<h3>What do you see in the fog?</h3><br>
+		<form id="question" method='post' action="/">
+			<input type="text" id="response">
+			<input type="submit" value="ENTER">
+		</form>
+		<ul id="words"></ul>
+	</div>
+	</body>
+</html>
